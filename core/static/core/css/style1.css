@@ -22,7 +22,7 @@ body {
 /*--Navbar--*/
 
 .navbar {
-  padding: none;
+  padding: 0;
 }
 
 .navbar-nav li {
@@ -30,20 +30,20 @@ body {
 }
 
 .nav-link {
-  font-size: 1.1em !important;
+  font-size: 1.8em !important;
 }
 
 .navbar-toggler {
-  background-color: #407fe6;
+  background-color: white;
 }
 
 .navbar ul li a:hover {
-  background-color: #407fe6;
+  background-color: #E8B266;
   color: #ffffff !important;
 }
 
 .navbar ul li a {
-  color: #407fe6 !important;
+  color: #9D6744 !important;
   border-radius: 8px;
 }
 
@@ -51,24 +51,6 @@ body {
   height: 30px;
   border-radius: 8px;
   border: 1px solid #407fe6;
-}
-
-.fa-search {
-  height: 30px;
-  width: auto;
-  border: none;
-  background-color: #407fe6;
-  border-radius: 8px;
-  color: white;
-  padding: 7px;
-  cursor: pointer;
-  margin: -7px;
-}
-
-.fa-search:hover {
-  background-color: #407fe6;
-  border-radius: 8px;
-  border: none;
 }
 
 /*--Slider--*/
@@ -79,54 +61,62 @@ body {
 
 .carousel-caption {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top:300px;
 }
 
-.carousel-caption h3 {
+.carousel-caption h1{
+  font-size: 300%;
+  font-weight: 500;
+  color:#f0ece9;
+  text-align: center;
+}
+.carousel-caption h2{
   font-size: 200%;
   font-weight: 500;
-  text-shadow: 1px 1px 10px #000;
-  margin-top: 20px;
+  color:#f0ece9;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.btn-primary {
-  background-color: #407fe6;
+
+.btn{
+  background-color: #9D6744;
   border: none;
   border-radius: 8px;
   transition: all 0.5s;
   color: white;
-  margin: 5px;
+  margin-top:5px;
   padding-bottom: auto;
   text-align: center;
+  font-size: larger;
 }
 
-.btn-primary span {
+.btn span {
   cursor: pointer;
   position: relative;
   transition: 0.5s;
 }
 
-.btn-primary span:after {
+.btn span:after {
   content: "\00bb";
   position: absolute;
   opacity: 0;
-  top: 0;
-  right: -20px;
+  top: -3px;
+  right:-20px;
   transition: 0.5s;
 }
 
-.btn-primary:hover {
-  background-color: #407fe6;
+.btn:hover {
+  color:white;
 }
 
-.btn-primary:hover span {
+.btn:hover span {
   padding-right: 25px;
 }
 
-.btn-primary:hover span:after {
+.btn:hover span:after {
   opacity: 1;
-  right: 0;
+  right:0;
 }
 
 /*--Welcome--*/
@@ -178,7 +168,6 @@ body {
   transition: all 0.5s;
   cursor: pointer;
   margin-top: 85px;
- 
 }
 
 .btn-outline-secondary span {
@@ -213,7 +202,7 @@ body {
 /*--Connect--*/
 
 .social a {
-  font-size: 4.5rem;
+  font-size: 2rem;
   padding: 3rem;
 }
 
