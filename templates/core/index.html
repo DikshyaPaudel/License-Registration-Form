@@ -2,17 +2,16 @@
 {% load static %}
 
 {% block body %}
-    <div id="slides" class="carousel slide" data-ride="carousel">
-        
+    <div id="slides" class="carousel slide" data-ride="carousel"> 
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="{% static 'core/img/back.jpg' %}">
                 <div class="carousel-caption">
-                    <h3>Welcome</h3>
-                    <h3>To Online Registration</h3>
-                    <a href="{% url 'core_app:License_Registration' %}" class="btn btn-outline-secondary"><span>Apply now</span></a>
-                    <!-- <button type="button" class="btn btn-outline-light btn-lg"><span>APPLY NOW</span> -->
-                    </button>
+                    <h1>Welcome</h1>
+                    <h2>To Online Registration</h2>
+                    <a href="{% url 'core_app:License_Registration' %}" class="btn"><span>Apply now</span></a>
+                    <!-- <button type="button" class="btn btn-outline-light btn-lg"><span>APPLY NOW</span>
+                    </button> -->
                 </div>
             </div>
             
@@ -21,7 +20,7 @@
     <!--End of Image slider-->
 
     <!--Welcome section-->
-    <div class="container-fluid padding">
+    <div class="container-fluid padding" id="About">
         <div class="row welcome text-center">
             <div class="col-12">
                 <h1 class="display-4">Our Services</h1>
@@ -79,7 +78,7 @@
         <div class="container-fluid padding">
             <div class="row text-center padding">
                 <div class="col-12">
-                    <h2>Connect</h2>
+                    <h2>Connect With Us</h2>
                 </div>
                 <div class="col-12 social padding">
                     <a href="#"><i class="fab fa-facebook"></i></a>
@@ -91,11 +90,11 @@
         </div>
     </section>
     <!--End of Connect-->
-
     <!--Scroll top-->
     <div class="Scroll-top">
         <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     </div>
+
 {% endblock %}
 
 {% block scripts %}
