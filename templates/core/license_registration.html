@@ -19,16 +19,6 @@
 <div class="form-lis">
     <form action="" method="POST">
         {% csrf_token %}
-       
-        {% if messages %}
-        <div class="messages">
-            {% for message in messages %}
-            <div class="alert alert-danger" role="alert">
-                {{ message }}
-            </div>
-            {% endfor %}
-        </div>
-        {% endif %}
 
 
         <div class="section1">
@@ -137,7 +127,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <label for="wiLastname">Witness LAST NAME</label>
+                                    <label for="wiLastname">WITNESS LAST NAME</label>
                                 </td>
                                 <td>
                                     <!-- <input type="text" name="witnesslname" class="witnesslname" placeholder="Last Name"> -->
@@ -190,7 +180,7 @@
                         </tr>
                         <tr>                            
                             <td>
-                                <label for="blockno">Village</label>
+                                <label for="blockno">CITY</label>
                             </td>
                             <td>
                                 <!-- <input type="number" name="blocknono" class="blockno" > -->
