@@ -69,6 +69,10 @@ class PersonalDetail(models.Model):
     w_l_name = models.CharField(max_length=100, null=True)
     w_relationship = models.CharField(choices=RELATION_CHOICE, max_length=6 ,null=True)
 
+
+    
+
+
     def __str__(self):
         return self.f_name
 

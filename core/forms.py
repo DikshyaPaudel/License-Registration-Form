@@ -16,6 +16,8 @@ class Form1(forms.ModelForm):
             'w_relationship':Select(),
         }
         fields ='__all__'
+        
+
 
 class  Form2(forms.ModelForm):
     class Meta:

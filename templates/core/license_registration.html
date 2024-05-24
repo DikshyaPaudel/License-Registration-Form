@@ -8,16 +8,32 @@
         .hidden{
             display:none;
         }
+        .form-lis{
+            height: 500px
+            
+        }
     </style>
 {% endblock %}
     
 {% block body %}
+<div class="form-lis">
     <form action="" method="POST">
         {% csrf_token %}
-        <!-- Personal Details -->
+       
+        {% if messages %}
+        <div class="messages">
+            {% for message in messages %}
+            <div class="alert alert-danger" role="alert">
+                {{ message }}
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+
         <div class="section1">
             <div class="application">
-                <table style="width: 100%">
+                <table style="width: 100%; height: 300px;">
                     <thead>
                         <tr>
                             <th colspan="4" allgin="center">
@@ -34,6 +50,7 @@
                             <td>
                                 <!-- <input type="text" name="fnameinput" placeholder="First name"> -->
                                 {{ form.f_name }}
+                                
                             </td>
                             <td>
                                 <label id="appmname">APPLICANT MIDDLE NAME</label>
@@ -137,7 +154,7 @@
                     </tbody>
                 </table>                
             </div>
-            <input type="button" class="btn btn-primary me-md-2" id="nextBtn1" value="Next">
+            <input type="button" class="btn btn-primary me-md-2 m-4" id="nextBtn1" value="Next">
         </div>
 
         <!-- Address Details -->
@@ -207,7 +224,7 @@
                     </tbody>
                 </table>
             </div>
-            <input type="button" class="btn btn-primary me-md-2" id="prevBtn1" value="Prev">
+            <input type="button" class="btn btn-primary me-md-2 m-4" id="prevBtn1" value="Prev">
 			<input type="button" class="btn btn-primary me-md-2" id="nextBtn2" value="Next">
         </div>
 
@@ -256,10 +273,11 @@
                     </tr>	
                 </table>            
             </div>
-            <input type="button" class="btn btn-primary" id="prevBtn2" value="Prev">      
+            <input type="button" class="btn btn-primary m-4" id="prevBtn2" value="Prev">      
 			<input type="submit" class="btn btn-success submitBtn " value="Submit">
         </div>
     </form>
+</div>
 {% endblock %}
 
 {% block scripts %}

@@ -1,50 +1,55 @@
-
-*{
-	padding: 0;
+* {
+  padding: 0;
 }
 .application table thead tr th {
-    background-color:#0099FF;
+  background-color: #dee9f0;
+  padding: 20px;
 }
 
 .application {
-	border:1px solid  #0099FF;
-	border-radius: 3px;
+  border: 1px solid #dee9f0;
+  border-radius: 3px;
+  padding: 40px;
 }
 
-.application label select{
-	width: 200px;
-	display: inline-block;
+.application label select {
+  width: 200px;
+  display: inline-block;
 }
 .presentadd table thead tr th {
-	background-color:#0099FF;
+  background-color:#dee9f0;
 }
-.addressdetails{
-	border:1px solid  #0099FF;
-	border-radius: 3px;
+.addressdetails {
+  border: 1px solid #dee9f0;
+  border-radius: 3px;
+  padding: 40px;
 }
-.permanentadd{
-	border:1px solid  #0099FF;
-	border-radius: 3px;
+.permanentadd {
+  border: 1px solid #dee9f0;
+  border-radius: 3px;
+  padding: 40px;
 }
-.presentadd{
-	border:1px solid  #0099FF;
-	border-radius: 3px;
+.presentadd {
+  border: 1px solid #dee9f0;
+  border-radius: 3px;
+  padding: 40px;
 }
-.examinfo{
-	border:1px solid  #0099FF;
-	border-radius: 3px;
+.examinfo {
+  border: 1px solid #dee9f0;
+  border-radius: 3px;
+  padding: 40px;
 }
-.final{
-	border:1px solid  #0099FF;
-	border-radius: 3px;
-	border-collapse: collapse;
-	text-align: left;
+.final {
+  border: 1px solid #dee9f0;
+  border-radius: 3px;
+  border-collapse: collapse;
+  text-align: left;
+  padding: 40px;
 }
-.final table tr td select{
-	width: 200px;
-	display: inline-block;
-
+.final table tr td select {
+  width: 200px;
+  display: inline-block;
 }
-.examinfo table thead tr th{
-	background-color:#0099FF;
+.examinfo table thead tr th {
+  background-color: #dee9f0;
 }

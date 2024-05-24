@@ -38,12 +38,12 @@ body {
 }
 
 .navbar ul li a:hover {
-  background-color: #E8B266;
+  background-color: #e8b266;
   color: #ffffff !important;
 }
 
 .navbar ul li a {
-  color: #9D6744 !important;
+  color: #9d6744 !important;
   border-radius: 8px;
 }
 
@@ -61,31 +61,30 @@ body {
 
 .carousel-caption {
   position: absolute;
-  top:300px;
+  top: 300px;
 }
 
-.carousel-caption h1{
+.carousel-caption h1 {
   font-size: 300%;
   font-weight: 500;
-  color:#f0ece9;
+  color: #f0ece9;
   text-align: center;
 }
-.carousel-caption h2{
+.carousel-caption h2 {
   font-size: 200%;
   font-weight: 500;
-  color:#f0ece9;
+  color: #f0ece9;
   margin-bottom: 20px;
   text-align: center;
 }
 
-
-.btn{
-  background-color: #9D6744;
+.btn {
+  background-color: #9d6744;
   border: none;
   border-radius: 8px;
   transition: all 0.5s;
   color: white;
-  margin-top:5px;
+  margin-top: 5px;
   padding-bottom: auto;
   text-align: center;
   font-size: larger;
@@ -102,12 +101,12 @@ body {
   position: absolute;
   opacity: 0;
   top: -3px;
-  right:-20px;
+  right: -20px;
   transition: 0.5s;
 }
 
 .btn:hover {
-  color:white;
+  color: white;
 }
 
 .btn:hover span {
@@ -116,7 +115,7 @@ body {
 
 .btn:hover span:after {
   opacity: 1;
-  right:0;
+  right: 0;
 }
 
 /*--Welcome--*/
