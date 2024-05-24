@@ -40,62 +40,66 @@
     <div class="col-md-4"></div>
     <div class="col-md-4">
       <div class="card">
-        <img class="card-img-top" src="{% static 'core/img/02.jpg' %}" />
+        <img
+          class="card-img-top w-100"
+          src="{% static 'core/img/driving.png' %}"
+        />
         <div class="card-body">
           <h4 class="card-title">Driving Lisence</h4>
-          <p class="card-text">Click on proceed to apply</p>
+
           <a
             href="{% url 'core_app:License_Registration' %}"
-            class="btn btn-outline-secondary"
-            ><span>Proceed</span></a
+            class="btn btn-outline-secondary px-4"
+            style="margin-top: 0px; margin-left: 120px"
+            ><span>Click to Proceed</span></a
           >
         </div>
       </div>
-    </div>
-    <div class="col-md-4"></div>
-  </div>
-</div>
-<!--End of Cards-->
-
-<!--Connect-->
-<section id="Contact">
-  <div class="container-fluid padding">
-    <div class="row text-center padding">
-      <div class="col-12">
-        <h2>Connect With Us</h2>
-      </div>
-      <div class="col-12 social padding">
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="far fa-envelope"></i></a>
-        <a href="#"><i class="fab fa-viber"></i></a>
-      </div>
+      <div class="col-md-4"></div>
     </div>
   </div>
-</section>
-<!--End of Connect-->
-<!--Scroll top-->
-<div class="Scroll-top">
-  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-</div>
+  <!--End of Cards-->
 
-{% endblock %} {% block scripts %}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script
-  type="text/javascript"
-  src="{% static 'core/js/jquery-3.3.1.min.js' %}"
-></script>
-<script
-  type="text/javascript"
-  src="{% static 'core/js/scrolltop.js' %}"
-></script>
-<script
-  type="text/javascript"
-  src="{% static 'core/js/smooth-scroll.js' %}js/smooth-scroll.js"
-></script>
-<script>
-  var scroll = new SmoothScroll('a[href*="#"]');
-</script>
-{% endblock %}
+  <!--Connect-->
+  <section id="Contact">
+    <div class="container-fluid padding">
+      <div class="row text-center padding">
+        <div class="col-12">
+          <h2>Connect With Us</h2>
+        </div>
+        <div class="col-12 social padding">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="far fa-envelope"></i></a>
+          <a href="#"><i class="fab fa-viber"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End of Connect-->
+  <!--Scroll top-->
+  <div class="Scroll-top">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  </div>
+
+  {% endblock %} {% block scripts %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script
+    type="text/javascript"
+    src="{% static 'core/js/jquery-3.3.1.min.js' %}"
+  ></script>
+  <script
+    type="text/javascript"
+    src="{% static 'core/js/scrolltop.js' %}"
+  ></script>
+  <script
+    type="text/javascript"
+    src="{% static 'core/js/smooth-scroll.js' %}js/smooth-scroll.js"
+  ></script>
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
+  {% endblock %}
+</div>
